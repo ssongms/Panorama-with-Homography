@@ -25,7 +25,7 @@
 
 ## FAST_and_BRIEF.py
 
-  keypoint와 descriptor 검출을 위해 openCV 라이브러리의 ORB, KAZE 등을 사용하면 약 5 line에 완료할 수 있다는 사실을 알고있지만, CV 과목을 수강하면서 Harris corner 외에 다른 특징점 검출 알고리즘이 무엇이 있는지에 대한 궁금증이 생겼고 라이브러리 도움없이 이미지에서 직접 특징점을 검출해보고 싶었습니다. 따라서 특징점 검출을 위해 FAST, 특징점 주변의 decriptor 계산을 위해 BRIEF 알고리즘을 사용하기로 했습니다. 
+  keypoint와 descriptor 검출을 위해 openCV 라이브러리의 ORB, KAZE 등을 사용하면 약 5 line에 완료할 수 있다는 사실을 알고있지만, CV 과목을 수강하면서 Harris corner 외에 다른 특징점 검출 알고리즘이 무엇이 있는지에 대한 궁금증이 생겼고 라이브러리 도움없이 이미지에서 직접 특징점을 검출해보고 싶었습니다. 따라서 특징점 검출을 위해 FAST, 특징점 주변의 descriptor 계산을 위해 BRIEF 알고리즘을 사용하기로 했습니다. 
 
 ### - FAST
 
