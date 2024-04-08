@@ -4,7 +4,7 @@
 
 ---
 
-<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/directoryTree.png" width="400" height="auto">
+<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/directoryTree.png" width="250" height="auto">
   제가 진행한 프로젝트의 파일 디렉토리 구조입니다. 키포인트 및 디스크립터 검출 등 최대한 bottom부터 라이브러리의 도움을 받지 않고 직접 구현하는 데에 집중했습니다. 그렇기 때문에 코드를 작성하면서 구분되는 기능별로 모듈화했습니다. 파일 내의 함수에 대한 자세한 설명은 소스 코드 내 주석 처리로 적어 놓았습니다. 본 보고서에서는 모듈별 큰 동작 원리와 문제점을 어떤 식으로 해결해 나갔는지 등에 대해서 설명하도록 하겠습니다. 사용한 이미지는 inputs 폴더에 있으며 결과 이미지는 results 폴더에 있습니다.
 
 ---
@@ -37,7 +37,7 @@
 
 ### - BRIEF
 
-<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/brief.png" width="350" height="auto">
+<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/brief.png" width="300" height="auto">
 
   BRIEF(Binary Robust Independent Elementary Features)는 descriptor를 Binary 형태로 표현하는 디스크립터 생성 알고리즘입니다. 검출된 각 키포인트를 기준으로 주변 영역의 픽셀을 다른 픽셀과 비교해서 더 밝은 부분을 찾아 binary 형식(0과 1)으로 저장하는 매커니즘입니다. 예를 들어 descriptor의 결과는 01101000(8bits→2 $^8$=256) 등이 될 수 있습니다.
 
@@ -192,7 +192,7 @@
 
 ### 4-1. 문제점 파악
 
-<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/beforeImproveToneMapping.png" width="400" height="auto">
+<img src="https://github.com/ssongms/Panorama-with-Homography/blob/main/assets/beforeImporveToneMapping.png" width="400" height="auto">
 
   카메라의 각도나 찍는 시점이 살짝만 바뀌어도 두 이미지의 색감, 명암 등이 다르기 때문에 스티칭된 결과 이미지가 매끄럽지 않았습니다. 
 
